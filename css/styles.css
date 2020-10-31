@@ -3084,7 +3084,7 @@ input[type=button].btn-block {
       background-color: rgba(255,255,255,0.5);
       border: 5px solid rgba(255,255,255,1);
       width: 90%;
-      height: 110%;  /*si lo dejo en auto me mantiene los margenes del 3%*/
+      height: 38%;  /*si lo dejo en auto me mantiene los margenes del 3%*/
       margin: 5%; /* width + 2* margin debe ser igual a 50% */
       margin-top: -10%;
       border-radius: 15px;
