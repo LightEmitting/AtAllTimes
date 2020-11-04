@@ -3057,6 +3057,7 @@ input[type=button].btn-block {
   header.masthead {
     padding-top: 20rem;
     padding-bottom: 20rem;
+    margin-right: -11.4px;
     text-align: center;
     color: #fff;
     background-image: url("../assets/img/atalltimes-web2.png");
@@ -3137,6 +3138,7 @@ input[type=button].btn-block {
   header.masthead {
     padding-top: 10.5rem;
     padding-bottom: 6rem;
+    margin-right: -14px;
     text-align: center;
     color: #fff;
     background-image: url("../assets/img/atalltimes-web1.png");
