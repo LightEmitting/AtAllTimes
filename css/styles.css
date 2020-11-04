@@ -595,10 +595,10 @@ pre code {
     max-width: 1140px;
   }
 }
+
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -0.75rem;
   margin-left: -0.75rem;
 }
 
@@ -3057,7 +3057,6 @@ input[type=button].btn-block {
   header.masthead {
     padding-top: 20rem;
     padding-bottom: 20rem;
-    margin-right: -11.4px;
     text-align: center;
     color: #fff;
     background-image: url("../assets/img/atalltimes-web2.png");
@@ -3138,7 +3137,6 @@ input[type=button].btn-block {
   header.masthead {
     padding-top: 10.5rem;
     padding-bottom: 6rem;
-    margin-right: -14px;
     text-align: center;
     color: #fff;
     background-image: url("../assets/img/atalltimes-web1.png");
@@ -3147,6 +3145,7 @@ input[type=button].btn-block {
     background-position: center center;
     background-size: cover;       
   }
+
   header.masthead .masthead-subheading {
     font-size: 1.5rem;
     font-style: italic;
