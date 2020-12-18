@@ -546,6 +546,15 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
+
+.bg-about{
+  background-color: #f6d53f;
+}
+
+.bg-service{
+  background-color: #faeec3;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -595,6 +604,7 @@ pre code {
     max-width: 1140px;
   }
 }
+
 
 .row {
   display: flex;
@@ -3066,13 +3076,13 @@ input[type=button].btn-block {
     background-size: 100% 100%;   
   }
   
-  .object-mp#header.masthead{
+  .object#header.masthead{
     margin: 0;
     position: absolute;
     height: 10%;
   }
 
-  .btn-primary-mp#header.masthead{
+  .btn-primary#header.masthead{
     background-color: rgba(254,210,52,0.5);
     color: #fff;  
     margin: 0;
@@ -3080,8 +3090,13 @@ input[type=button].btn-block {
     height: 10%;
     } 
 
-    .box-mp{
-      background-color: rgba(255,255,255,0.5);
+    .st-about{
+      margin-top: 0%; 
+      margin-bottom: 0%;
+    }
+
+    .box{
+      background-color: #faeec3;
       border: 5px solid rgba(255,255,255,1);
       width: 90%;
       height: 38%;  /*si lo dejo en auto me mantiene los margenes del 3%*/
@@ -3091,17 +3106,17 @@ input[type=button].btn-block {
       padding: 20px; /* margenes de los costados entre texto y caja */
     }
 
-    .font-title-mp{
+    .font-title{
       text-align: center;
       font-size: 30px;
     }
 
-    .font-text-mp{
+    .font-text{
       text-align: center;
       font-size: 15px;
     }
 
-    .btn-secondary-mp{
+    .btn-secondary{
       color: black;
       background-color: #fed136;
       border-color: #fed136;
@@ -3109,7 +3124,7 @@ input[type=button].btn-block {
       justify-content: center;
       } 
 
-      .mancha-mp {
+      .mancha{
         max-width: 100%;
         height:500px;
         margin-top: -10%;
@@ -3117,7 +3132,7 @@ input[type=button].btn-block {
         z-index:1;
       }
     
-      .iframe-mp {
+      .iframe{
         position: absolute;
         height: 60%;
         width: 90%;
@@ -3283,8 +3298,9 @@ input[type=button].btn-block {
         top: -50%;
         left: -120px;
         transition-delay: 0.625s;
-      }      
-      .estilo{
+      }    
+
+      .st-service{
         margin-top: 40%; 
         margin-bottom: 46%;
       }
@@ -3362,8 +3378,8 @@ input[type=button].btn-block {
       
       p.text-service3{
         color: black; 
-        margin-left: 20%; 
-        margin-top: -10%; 
+        margin-left: 100%; 
+        margin-top: -30%; 
         font-size: 25px; 
         font-weight: lighter;
       }
@@ -3439,12 +3455,17 @@ input[type=button].btn-block {
   text-align: center;
   }
 
+.st-about{
+  margin-top: -12%; 
+  margin-bottom: -5%;
+}
+
 .box{
   margin-top: 0%;
-  background-color: rgba(255,255,255,0.5);
+  background-color: #faeec3;
   border: 5px solid rgba(255,255,255,1);
   width: 50%;
-  height: 59%;  /*si lo dejo en auto me mantiene los margenes del 3%*/
+  height: auto;  /*si lo dejo en auto me mantiene los margenes del 3%*/
   margin: 0%; /* width + 2* margin debe ser igual a 50% */
   margin-top: 13%;
   border-radius: 15px;
@@ -3452,11 +3473,11 @@ input[type=button].btn-block {
 }
 
   .font-title{
-    font-size: 46px;
+    font-size: 35px;
   }
 
   .font-text{
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .mancha{
@@ -3488,10 +3509,21 @@ input[type=button].btn-block {
     left: auto;
   }
 
-  .object-pc{
+  .object{
     max-width: 60%;
   }
 
+  .box{
+    margin-top: 0%;
+    background-color: #faeec3;
+    border: 5px solid rgba(255,255,255,1);
+    width: 50%;
+    height: 59%;  /*si lo dejo en auto me mantiene los margenes del 3%*/
+    margin: 0%; /* width + 2* margin debe ser igual a 50% */
+    margin-top: 13%;
+    border-radius: 15px;
+    padding: 25px; /* margenes de los costados entre texto y caja */
+  }
 }
 @media (min-width: 1200px) {
   .dropdown-menu-xl-left {
@@ -10942,7 +10974,7 @@ a{
   transition-delay: 0.625s;
 }
 
-.estilo{
+.st-service{
   margin-top: -12%; 
   margin-bottom: 5%;
 }
@@ -11020,7 +11052,7 @@ p.text-service2{
 
 p.text-service3{
   color: black; 
-  margin-left: 15%; 
+  margin-left: 20%; 
   margin-top: -10%; 
   font-size: 25px; 
   font-weight: lighter;
@@ -11202,9 +11234,14 @@ section#contact form#contactForm :-ms-input-placeholder {
     text-align: center;
     }
   
+  .st-about{
+    margin-top: 0%; 
+    margin-bottom: 0%;
+  }
+
   .box{
     margin-top: 0%;
-    background-color: rgba(255,255,255,0.5);
+    background-color: #faeec3;
     border: 5px solid rgba(255,255,255,1);
     width: 50%;
     height: 59%;  /*si lo dejo en auto me mantiene los margenes del 3%*/
@@ -11391,7 +11428,7 @@ section#contact form#contactForm :-ms-input-placeholder {
     transition-delay: 0.625s;
   }
   
-  .estilo{
+  .st-service{
     margin-top: 0%; 
     margin-bottom: 15%;
   }
@@ -11469,7 +11506,7 @@ section#contact form#contactForm :-ms-input-placeholder {
   
   p.text-service3{
     color: black; 
-    margin-left: 35%; 
+    margin-left: 20%; 
     margin-top: -10%; 
     font-size: 25px; 
     font-weight: lighter;

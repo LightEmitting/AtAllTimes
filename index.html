@@ -6,17 +6,15 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>AtAllTimes</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon1.ico"/>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon-computer.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -37,24 +35,23 @@
                 </div>
             </div>
         </nav>
-        
         <!-- Masthead-->
         <header class="masthead">
-            <div class="container" style="margin-bottom: 2%;">
-                <object data="assets/img/AaT-dinamic.svg" class="object-pc object-mp" type="image/svg+xml">
-                    <!-- Imagen alternativa si el SVG no puede cargarse -->
-                    <img src="assets/img/AaT.svg" alt="Imagen PNG alternativa">
-                </object>              
-            </div>    
             <div class="container">
-                <a class="btn btn-primary btn-xl btn-primary-mp text-uppercase js-scroll-trigger" href="#about">Conocenos</a>
+                <object class="object" data="assets/img/AaT-dinamic.svg" type="image/svg+xml">
+                <!-- Imagen alternativa si el archivo SVG no pueda abrirse -->
+                <img src="assets/img/AaT.svg" alt="logo estatico de atalltimes">
+                </object>
+            </div>
+            <div class="container">    
+                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#about">Conocenos</a>
             </div>
         </header>
 
         <!-- About-->
-        <section class="page-section row quienessomos" style="background-color: #f6d53f;" id="about">
-            <div class="container" style="margin-top: -10%; margin-bottom: -5%">
-                <div class="column box box-mp">
+        <section class="page-section row bg-about" id="about">
+            <div class="container st-about">
+                <div class="column box">
                     <h2 class="font-title font-title-mp">Quiénes Somos</h2>
                     <p class="font-text font-text-mp">Lorem ipsum dolor sit amet, consectetur 
                         adipisicing elit. Minima maxime quam architecto quo inventore harum ex 
@@ -72,10 +69,9 @@
             </div>
         </section>
 
-    
         <!-- Services-->
-        <section class="page-section" style="background-color: #faeec3;" id="services">
-            <div class="container estilo">
+        <section class="page-section bg-service" id="services">
+            <div class="container st-service">
                <!--
                 <h1 style="text-align: center;">Servicios</h1>
                 <h6 style="text-align: center;">Para trabajos más personalizador no dude en contactarnos</h6>
@@ -115,32 +111,7 @@
             </div><!-- container -->
         </section>
 
-        <!-- Modal 1-->
-        <div class="modal fade " id="Modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                    <div class="modal-header">
-                        <button type="button"  class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row">
-                            <h1>Sitio Web Responsivo</h1>
-                            <br></br>
-                            <p class="text-white-50 text-lg-left" style="font-family: 'Montserrat', sans-serif;">Un sitio web responsivo es ... soluciones exitosas para empresas y entidades financieras internacionales, IT Patagonia se unió a Unidigital, un hub de innovación digital pionero en Argentina.                     
-                            </p>
-                            <div >
-                                <img src="assets/img/mancha.png" class="mancha mancha-mp" alt="fondo mancha"></img>
-                                <iframe class="iframe iframe-mp"
-                                src="https://www.youtube.com/embed/h4E1J6TNoLY">
-                                </iframe> 
-                            </div>
-                        </div>
-                    </div>
-            </div>
-        </div>
         
-
         <!-- Portfolio Grid-->
         <section class="page-section bg-light" id="portfolio">
             <div class="container">
