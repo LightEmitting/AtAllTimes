@@ -6,13 +6,14 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>AtAllTimes</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon-computer.ico" />
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon1.ico"/>
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
@@ -35,83 +36,78 @@
                 </div>
             </div>
         </nav>
+        
         <!-- Masthead-->
         <header class="masthead">
             <div class="container">
-                <object class="object" data="assets/img/AaT-dinamic.svg" type="image/svg+xml">
-                <!-- Imagen alternativa si el archivo SVG no pueda abrirse -->
-                <img src="assets/img/AaT.svg" alt="logo estatico de atalltimes">
-                </object>
-            </div>
-            <div class="container">    
-                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#about">Conocenos</a>
+                <object data="assets/img/AaT-dinamic.svg" class="object-pc object-mp" type="image/svg+xml">
+                    <!-- Imagen alternativa si el SVG no puede cargarse -->
+                    <img src="assets/img/AaT.svg" alt="Imagen PNG alternativa">
+                </object>              
+            </div>    
+            <div class="container">
+                <a class="btn btn-primary btn-xl btn-primary-mp text-uppercase js-scroll-trigger" href="#about">Conocenos</a>
             </div>
         </header>
 
         <!-- About-->
-        <section class="page-section row bg-about" id="about">
-            <div class="container st-about">
-                <div class="column box">
-                    <h2 class="font-title font-title-mp">Quiénes Somos</h2>
+        <div class="page-section row quienesomos" id="about">
+            <div class="container margin">
+                <div class="column box box-mp">
+                    <h2 class="font-title font-title-mp" >Quiénes Somos</h2>
                     <p class="font-text font-text-mp">Lorem ipsum dolor sit amet, consectetur 
                         adipisicing elit. Minima maxime quam architecto quo inventore harum ex 
                         magni, dicta impedit.
                         Lorem ipsum dolor sit amet, consectetur 
-                        adipisicing elit. </p>
+                        adipisicing elit. 
+                    </p>
                     <a class="btn btn-secondary btn-xl btn-secondary-mp js-scroll-trigger" href="#services">Nuestros Servicios</a>
                 </div>
                 <div class="column" style="position: relative;">
                     <img src="assets/img/mancha.png" class="mancha mancha-mp" alt="fondo mancha">
+
                     <iframe class="iframe iframe-mp"
                     src="https://www.youtube.com/embed/h4E1J6TNoLY">
                     </iframe> 
                 </div>
             </div>
-        </section>
-
+        </div>
+    
         <!-- Services-->
-        <section class="page-section bg-service" id="services">
-            <div class="container st-service">
-               <!--
-                <h1 style="text-align: center;">Servicios</h1>
-                <h6 style="text-align: center;">Para trabajos más personalizador no dude en contactarnos</h6>
-            -->
-                <div class='menu'>
-                    <input class='toggle' id='menu' type='checkbox'>
-                    <label class='style' for='menu'>
-                        <i class="fas fa-globe icon-service"></i>
-                        <p class="text-service">Webs</p>
-                    </label>
-                    
-                    <a data-toggle="modal" data-target="#Modal1" class='tab' href='#services'>
-                        <p class="fas fa-mobile-alt icon-services1"></p>
-                        <p class="text-service1">Responsive</p>
-                    </a>
-                    <a class='tab' href='#services'>
-                        <p class="fas fa-home icon-services2"></p>
-                        <p class="text-service2">Hosting</p>
-                    </a>
-                    <a class='tab' href='#services'>
-                        <p class="fas fa-mouse-pointer icon-services3"></p>
-                        <p class="text-service3">CEO</p>
-                    </a>
-                    <a class='tab' href='#services'>
-                        <p class="fas fa-graduation-cap icon-services4"></p>
-                        <p class="text-service4">Cursos</p>
-                    </a>
-                    <a class='tab' href='#services'>
-                        <P class="far fa-gem icon-services5"></P>
-                        <p class="text-service5">Diseño Web</p>
-                    </a>
-                    <a class='tab' href='#services'>
-                        <P class="fas fa-key icon-services6"></P>
-                        <p class="text-service6">Dominio</p>
-                    </a>
-                </div><!-- menu -->
-            </div><!-- container -->
+        <section class="page-section" id="services">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Services</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">E-Commerce</h4>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Responsive Design</h4>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Web Security</h4>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    </div>
+                </div>
+            </div>
         </section>
-
-        
         <!-- Portfolio Grid-->
         <section class="page-section bg-light" id="portfolio">
             <div class="container">
