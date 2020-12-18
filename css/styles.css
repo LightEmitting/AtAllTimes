@@ -3362,13 +3362,10 @@ input[type=button].btn-block {
       
       p.text-service3{
         color: black; 
-        margin-left: -30%; 
-        margin-top: -20%; 
+        margin-left: 20%; 
+        margin-top: -10%; 
         font-size: 25px; 
-        font-weight: lighter; 
-        line-height: 30px;
-        text-align: center;
-        display: inline-flex; 
+        font-weight: lighter;
       }
       
       p.text-service4{
@@ -11023,13 +11020,10 @@ p.text-service2{
 
 p.text-service3{
   color: black; 
-  margin-left: -30%; 
-  margin-top: -20%; 
+  margin-left: 15%; 
+  margin-top: -10%; 
   font-size: 25px; 
-  font-weight: lighter; 
-  line-height: 30px;
-  text-align: center;
-  display: inline-flex; 
+  font-weight: lighter;
 }
 
 p.text-service4{
@@ -11475,13 +11469,10 @@ section#contact form#contactForm :-ms-input-placeholder {
   
   p.text-service3{
     color: black; 
-    margin-left: -30%; 
-    margin-top: -20%; 
+    margin-left: 35%; 
+    margin-top: -10%; 
     font-size: 25px; 
-    font-weight: lighter; 
-    line-height: 30px;
-    text-align: center;
-    display: inline-flex; 
+    font-weight: lighter;
   }
   
   p.text-service4{
