@@ -548,11 +548,11 @@ pre code {
 }
 
 .bg-about{
-  background-color: #f6d53f;
+  background: linear-gradient(to bottom, #f6d53f 70%, #faeec3 );
 }
 
 .bg-service{
-  background-color: #faeec3;
+  background: linear-gradient(to bottom, #faeec3 70%, white );
 }
 
 @media (min-width: 576px) {
@@ -3069,7 +3069,8 @@ input[type=button].btn-block {
     padding-bottom: 20rem;
     text-align: center;
     color: #fff;
-    background-image: url("../assets/img/atalltimes-web2.png");
+/*    background-image: url("../assets/img/atalltimes-web2.png");*/
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 95%, #f6d53f), url(../assets/img/atalltimes-web2.png);
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -3092,7 +3093,7 @@ input[type=button].btn-block {
 
     .st-about{
       margin-top: -10%; 
-      margin-bottom: 0%;
+      margin-bottom: -30%;
     }
 
     .box{
@@ -3127,7 +3128,7 @@ input[type=button].btn-block {
       .mancha{
         max-width: 100%;
         height:500px;
-        margin-top: -10%;
+        margin-top: -15%;
         left: 35%;
         z-index:1;
       }
@@ -3418,7 +3419,8 @@ input[type=button].btn-block {
     padding-bottom: 6rem;
     text-align: center;
     color: #fff;
-    background-image: url("../assets/img/atalltimes-web1.png");
+/*    background-image: url("../assets/img/atalltimes-web1.png"); */
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 95%, #f6d53f), url(../assets/img/atalltimes-web1.png);
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -3514,13 +3516,12 @@ input[type=button].btn-block {
   }
 
   .box{
-    margin-top: 0%;
     background-color: #faeec3;
     border: 5px solid rgba(255,255,255,1);
     width: 50%;
-    height: 59%;  /*si lo dejo en auto me mantiene los margenes del 3%*/
+    height: auto;  /*si lo dejo en auto me mantiene los margenes del 3%*/
     margin: 0%; /* width + 2* margin debe ser igual a 50% */
-    margin-top: 13%;
+    margin-top: 17%;
     border-radius: 15px;
     padding: 25px; /* margenes de los costados entre texto y caja */
   }
@@ -4578,6 +4579,7 @@ input[type=button].btn-block {
   .navbar-expand-md .navbar-nav .dropdown-menu {
     position: absolute;
   }
+
   .navbar-expand-md .navbar-nav .nav-link {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
@@ -4652,6 +4654,7 @@ input[type=button].btn-block {
   }
 }
 @media (min-width: 1200px) {
+
   .navbar-expand-xl {
     flex-flow: row nowrap;
     justify-content: flex-start;
@@ -5865,6 +5868,7 @@ a.close.disabled {
   width: auto;
   margin: 0.5rem;
   pointer-events: none;
+  margin-bottom: 100%;
 }
 .modal.fade .modal-dialog {
   transition: transform 0.3s ease-out;
@@ -10218,6 +10222,7 @@ button.bg-dark:focus {
 
 .text-uppercase {
   text-transform: uppercase !important;
+  margin-top: 1%;
 }
 
 .text-capitalize {
@@ -10840,30 +10845,22 @@ a{
   transform: translate(-50%, 55%);
 }
 
-.toggle {
-  display: none;
-}
 
 .toggle + .style {
-    width: 300px;
+    width: 1px;
     height: 300px;
-    border-radius: 50%;
+    border-radius: 0%;
     cursor: pointer;
     transform: translate(-50%, -50%) scale(1);
     z-index: 5;
     display: block;
     max-width: 300px;
+    margin-left: -600px;
     margin-bottom: 0;
-    background: #fed136;
-    color: #fff;
+    background: #faeec3; /*#f6d53f*/
     font-size: 2.5em;
     padding-top: 100px;
     text-align: center;
-   -webkit-transition: all .8s;
-   -moz-transition: all .8s;
-   -o-transition: all .8s;
-   -ms-transition: all .8s;
-   transition: all .8s;
 }
 
 .menu p{
@@ -10876,23 +10873,6 @@ a{
     font-size: 2em;
 }
 
-.toggle + .style:hover{
-	-webkit-box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, .7);
-    -moz-box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, .7);
-    -ms-box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, .7);
-    -o-box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, .7);
-    box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, .7);
-}
-
-.toggle:checked + .style {
-  transform: translate(-50%, -50%) scale(.4); /*scale center icon*/
-}
-
-.menu input[type=checkbox] + label:before {
-    content: "";
-    position: absolute;
-}
-
 .toggle + .style:before, .toggle + .style:after {
   content: "";
   position: absolute;
@@ -10902,21 +10882,11 @@ a{
 }
 
 .toggle + .style:before {
+  
   width: 30px;
   height: 0px;
   left: 10px;
   top: 25px;
-}
-
-.toggle + .style:after {
-  width: 0px;
-  height: 30px;
-  left: 25px;
-  top: 10px;
-}
-
-.toggle:checked + .style:before, .toggle:checked + .style:after {
-  transform: rotate(135deg);
 }
 
 .toggle ~ .tab {
@@ -10939,39 +10909,45 @@ a{
 }
 
 .menu > .toggle:checked ~ .tab:nth-of-type(1) {
+  top: 0%;
+  left: 0%;
+  transition-delay: 0.5s;
+}
+
+.menu > .toggle:checked ~ .tab:nth-of-type(7) {
   top: -60%;
   left: 0%;
-  transition-delay: 0s;
+  transition-delay: 0.625s;
 }
 
 .menu > .toggle:checked ~ .tab:nth-of-type(2) {
   top: -30%;
   left: 315px;
-  transition-delay: 0.125s;
+  transition-delay: 0.75s;
 }
 
 .menu > .toggle:checked ~ .tab:nth-of-type(3) {
   top: 30%;
   left: 315px;
-  transition-delay: 0.25s;
+  transition-delay: 0.875s;
 }
 
 .menu > .toggle:checked ~ .tab:nth-of-type(4) {
   top: 60%;
   left: 0%;
-  transition-delay: 0.375s;
+  transition-delay: 1s;
 }
 
 .menu > .toggle:checked ~ .tab:nth-of-type(5) {
   top: 30%;
   left: -315px;
-  transition-delay: 0.5s;
+  transition-delay: 1.125s;
 }
 
 .menu > .toggle:checked ~ .tab:nth-of-type(6) {
   top: -30%;
   left: -315px;
-  transition-delay: 0.625s;
+  transition-delay: 1.25s;
 }
 
 .st-service{
@@ -10980,8 +10956,10 @@ a{
 }
 
 .icon-service{
-  margin-top: -15%;
-  font-size: 500%;
+  color: white;
+  font-size: 80px;
+  margin-top: 17%;
+  margin-left: 17.5%;
 }
 
 .icon-services1{
@@ -11028,9 +11006,9 @@ a{
 
 p.text-service{
   color: black; 
-  margin-left: 27%; 
-  margin-top: 10%; 
-  font-size: 55px; 
+  margin-left: 15%; 
+  margin-top: -15%; 
+  font-size: 25px; 
   font-weight: lighter;
 }
 
@@ -11059,12 +11037,11 @@ p.text-service3{
 }
 
 p.text-service4{
+  color: black; 
   margin-left: 15%; 
   margin-top: -20%; 
   font-size: 25px; 
   font-weight: lighter;
-  line-height: 25px;
-  color: black; 
 }
 
 p.text-service5{
@@ -11199,13 +11176,22 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-@media (min-width: 1400px) { 
+@media (min-width: 1400px) {
+  
+  #mainNav .navbar-nav .nav-item .nav-link {
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1.2rem;
+    color: #fff;
+    letter-spacing: 0.0625em;
+  }
+  
   header.masthead {
     padding-top: 24%;
     padding-bottom: 24%;
     text-align: center;
     color: #fff;
-    background-image: url("../assets/img/atalltimes-web1.png");
+/*    background-image: url("../assets/img/atalltimes-web1.png"); */
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 95%, #f6d53f), url(../assets/img/atalltimes-web1.png);
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -11344,7 +11330,6 @@ section#contact form#contactForm :-ms-input-placeholder {
   .menu input[type=checkbox] + label:before {
       content: "";
       position: absolute;
-
   }
   
   .toggle + .style:before, .toggle + .style:after {

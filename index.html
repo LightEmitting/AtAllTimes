@@ -15,6 +15,7 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -28,9 +29,9 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ml-auto">
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Quiénes Somos</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Servicios</a></li>
+                        <li class="nav-item" ><a class="nav-link js-scroll-trigger" id="btn-services1" href="#services">Servicios</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#prices">Precios</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contactos</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contacto</a></li>
                     </ul>
                 </div>
             </div>
@@ -58,12 +59,12 @@
                         magni, dicta impedit.
                         Lorem ipsum dolor sit amet, consectetur 
                         adipisicing elit. </p>
-                    <a class="btn btn-secondary btn-xl btn-secondary-mp js-scroll-trigger" href="#services">Nuestros Servicios</a>
+                    <a class="btn btn-secondary btn-xl btn-secondary-mp js-scroll-trigger" id="btn-services2" href="#services">Nuestros Servicios</a>
                 </div>
                 <div class="column" style="position: relative;">
                     <img src="assets/img/mancha.png" class="mancha mancha-mp" alt="fondo mancha">
-                    <iframe class="iframe iframe-mp"
-                    src="https://www.youtube.com/embed/h4E1J6TNoLY">
+                    <iframe class="iframe iframe-mp" id="iframe-about"
+                    src="https://www.youtube.com/embed/h4E1J6TNoLY?cc_load_policy=1" allow='autoplay'>
                     </iframe> 
                 </div>
             </div>
@@ -71,39 +72,37 @@
 
         <!-- Services-->
         <section class="page-section bg-service" id="services">
-            <div class="container st-service">
-               <!--
-                <h1 style="text-align: center;">Servicios</h1>
-                <h6 style="text-align: center;">Para trabajos más personalizador no dude en contactarnos</h6>
-            -->
+            <div class="container st-service" onmouseover="circlemenu()">
                 <div class='menu'>
                     <input class='toggle' id='menu' type='checkbox'>
-                    <label class='style' for='menu'>
-                        <i class="fas fa-globe icon-service"></i>
-                        <p class="text-service">Webs</p>
+                    <label class="style" for='menu'>
                     </label>
-                    
-                    <a data-toggle="modal" data-target="#Modal1" class='tab' href='#services'>
+
+                    <a data-toggle="modal" data-target="#Modal-responsive" class='tab' href='#services'>
+                        <p class="fas fa-globe icon-service"></p>
+                        <p class="text-service">Webs</p>
+                    </a>
+                    <a data-toggle="modal" data-target="#Modal-responsive" class='tab' href='#services'>
                         <p class="fas fa-mobile-alt icon-services1"></p>
                         <p class="text-service1">Responsive</p>
                     </a>
-                    <a class='tab' href='#services'>
+                    <a data-toggle="modal" data-target="#Modal-hosting" class='tab' href='#services'>
                         <p class="fas fa-home icon-services2"></p>
                         <p class="text-service2">Hosting</p>
                     </a>
-                    <a class='tab' href='#services'>
+                    <a data-toggle="modal" data-target="#Modal-ceo" class='tab' href='#services'>
                         <p class="fas fa-mouse-pointer icon-services3"></p>
                         <p class="text-service3">CEO</p>
                     </a>
-                    <a class='tab' href='#services'>
+                    <a data-toggle="modal" data-target="#Modal-courses" class='tab' href='#services'>
                         <p class="fas fa-graduation-cap icon-services4"></p>
                         <p class="text-service4">Cursos</p>
                     </a>
-                    <a class='tab' href='#services'>
+                    <a data-toggle="modal" data-target="#Modal-design" class='tab' href='#services'>
                         <P class="far fa-gem icon-services5"></P>
                         <p class="text-service5">Diseño Web</p>
                     </a>
-                    <a class='tab' href='#services'>
+                    <a data-toggle="modal" data-target="#Modal-domain" class='tab' href='#services'>
                         <P class="fas fa-key icon-services6"></P>
                         <p class="text-service6">Dominio</p>
                     </a>
@@ -111,7 +110,187 @@
             </div><!-- container -->
         </section>
 
+        <!-- modal web -->
+        <div class="modal fade" id="Modal-web" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content" >
+                    <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Web Responsiva</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body" style="margin-bottom: 25%">
+                        <p class="font-text font-text-mp" style="text-align: center;">Lorem ipsum dolor sit amet, consectetur 
+                            adipisicing elit. Minima maxime quam architecto quo inventore harum ex 
+                            magni, dicta impedit.
+                            Lorem ipsum dolor sit amet, consectetur 
+                            adipisicing elit. </p>
+                    <iframe id="iframe-web" style="position: relative; top: 0; left: 0; width: 100%; height: 80%; max-width: 700px; max-height: auto;"
+                            src="https://www.youtube.com/embed/h4E1J6TNoLY">
+                    </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
         
+        <!-- modal responsive -->
+        <div class="modal fade" id="Modal-responsive" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content" >
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel">Web Responsiva</h4>
+                        <button type="button" id="close-modal" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" style="margin-bottom: 25%">
+                        <p class="font-text font-text-mp" style="text-align: center;">Lorem ipsum dolor sit amet, consectetur 
+                            adipisicing elit. Minima maxime quam architecto quo inventore harum ex 
+                            magni, dicta impedit.
+                            Lorem ipsum dolor sit amet, consectetur 
+                            adipisicing elit. </p>
+                        <iframe id="iframe-responsive" style="position: relative; top: 0; left: 0; width: 100%; height: 80%; max-width: 700px; max-height: auto;"
+                                src="https://www.youtube.com/embed/h4E1J6TNoLY?cc_load_policy=1">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- modal hosting -->
+        <div class="modal fade" id="Modal-hosting" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content" >
+                    <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Web Responsiva</h4>
+                    <button type="button" id="close-modal" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body" style="margin-bottom: 25%">
+                        <p class="font-text font-text-mp" style="text-align: center;">Lorem ipsum dolor sit amet, consectetur 
+                            adipisicing elit. Minima maxime quam architecto quo inventore harum ex 
+                            magni, dicta impedit.
+                            Lorem ipsum dolor sit amet, consectetur 
+                            adipisicing elit. </p>
+                        <iframe id="iframe-hosting" style="position: relative; top: 0; left: 0; width: 100%; height: 80%; max-width: 700px; max-height: auto;"
+                                src="https://www.youtube.com/embed/h4E1J6TNoLY?cc_load_policy=1">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+          
+        <!-- modal ceo -->
+          <div class="modal fade" id="Modal-ceo" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content" >
+                    <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Web Responsiva</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body" style="margin-bottom: 25%">
+                        <p class="font-text font-text-mp" style="text-align: center;">Lorem ipsum dolor sit amet, consectetur 
+                            adipisicing elit. Minima maxime quam architecto quo inventore harum ex 
+                            magni, dicta impedit.
+                            Lorem ipsum dolor sit amet, consectetur 
+                            adipisicing elit. </p>
+                        <iframe id="iframe-ceo" style="position: relative; top: 0; left: 0; width: 100%; height: 80%; max-width: 700px; max-height: auto;"
+                                src="https://www.youtube.com/embed/h4E1J6TNoLY">
+                        </iframe> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- modal courses -->
+        <div class="modal fade" id="Modal-courses" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content" >
+                    <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">E-Learning</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body" style="margin-bottom: 25%">
+                        <p class="font-text font-text-mp" style="text-align: center;">Lorem ipsum dolor sit amet, consectetur 
+                            adipisicing. </p>
+                        <div class="modal-body" style="margin-bottom: 25%">
+                            <p class="font-text font-text-mp" style="text-align: center; font-size: small;">Lorem ipsum dolor sit amet, consectetur 
+                                adipisicing elit. Minima maxime quam architecto quo inventore harum ex 
+                                magni, dicta impedit.
+                                Lorem ipsum dolor sit amet, consectetur 
+                                adipisicing elit. </p>
+                            <iframe id="iframe-courses" style="position: relative; top: 0; left: 0; width: 100%; height: auto; max-width: 700px; max-height: auto;"
+                                    src="https://www.youtube.com/embed/h4E1J6TNoLY">
+                            </iframe> 
+                            <div class="modal-body" style="margin-bottom: 25%;">
+                                <p class="font-text font-text-mp" style="text-align: center; font-size: small;">Lorem ipsum dolor sit amet, consectetur 
+                                    adipisicing elit. Minima maxime quam architecto quo inventore harum ex 
+                                    magni, dicta impedit.
+                                    Lorem ipsum dolor sit amet, consectetur 
+                                    adipisicing elit. </p>
+                            <iframe id="iframe-courses" style="position: relative; top: 0; left: 0; width: 100%; height: 100%; max-width: 700px; max-height: auto;"
+                                    src="https://www.youtube.com/embed/h4E1J6TNoLY">
+                            </iframe> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- modal design -->
+        <div class="modal fade" id="Modal-design" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content" >
+                    <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Web Responsiva</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body" style="margin-bottom: 25%">
+                        <p class="font-text font-text-mp" style="text-align: center;">Lorem ipsum dolor sit amet, consectetur 
+                            adipisicing elit. Minima maxime quam architecto quo inventore harum ex 
+                            magni, dicta impedit.
+                            Lorem ipsum dolor sit amet, consectetur 
+                            adipisicing elit. </p>
+                        <iframe id="iframe-design" style="position: relative; top: 0; left: 0; width: 100%; height: 80%; max-width: 700px; max-height: auto;"
+                                src="https://www.youtube.com/embed/h4E1J6TNoLY">
+                        </iframe> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- modal domain -->
+        <div class="modal fade" id="Modal-domain" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content" >
+                    <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Web Responsiva</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body" style="margin-bottom: 25%">
+                        <p class="font-text font-text-mp" style="text-align: center;">Lorem ipsum dolor sit amet, consectetur 
+                            adipisicing elit. Minima maxime quam architecto quo inventore harum ex 
+                            magni, dicta impedit.
+                            Lorem ipsum dolor sit amet, consectetur 
+                            adipisicing elit. </p>
+                        <iframe id="iframe-domain" style="position: relative; top: 0; left: 0; width: 100%; height: 80%; max-width: 700px; max-height: auto;"
+                                src="https://www.youtube.com/embed/h4E1J6TNoLY">
+                        </iframe> 
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Portfolio Grid-->
         <section class="page-section bg-light" id="portfolio">
             <div class="container">
@@ -325,187 +504,7 @@
                 </div>
             </div>
         </footer>
-        <!-- Portfolio Modals-->
-        <!-- Modal 1-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/01-full.jpg" alt="" />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Threads</li>
-                                        <li>Category: Illustration</li>
-                                    </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-times mr-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal 2-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/02-full.jpg" alt="" />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Explore</li>
-                                        <li>Category: Graphic Design</li>
-                                    </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-times mr-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal 3-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/03-full.jpg" alt="" />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Finish</li>
-                                        <li>Category: Identity</li>
-                                    </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-times mr-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal 4-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/04-full.jpg" alt="" />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Lines</li>
-                                        <li>Category: Branding</li>
-                                    </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-times mr-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal 5-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/05-full.jpg" alt="" />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Southwest</li>
-                                        <li>Category: Website Design</li>
-                                    </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-times mr-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal 6-->
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/06-full.jpg" alt="" />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Window</li>
-                                        <li>Category: Photography</li>
-                                    </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-times mr-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
