@@ -53,4 +53,88 @@
     navbarCollapse();
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
+
+    //iframe stop
+    $(document).ready(function(){
+        /* Get iframe src attribute value i.e. YouTube video url
+        and store it in a variable */
+        var url = $("#iframe-web").attr('src');
+        var url = $("#iframe-responsive").attr('src');
+        var url = $("#iframe-hosting").attr('src');
+        var url = $("#iframe-ceo").attr('src');
+        var url = $("#iframe-courses").attr('src');
+        var url = $("#iframe-design").attr('src');
+        var url = $("#iframe-domain").attr('src');
+        
+        /* Assign empty url value to the iframe src attribute when
+        modal hide, which stop the video playing */
+        $("#Modal-web").on('hide.bs.modal', function(){
+            $("#iframe-web").attr('src', '');
+        });
+        $("#Modal-responsive").on('hide.bs.modal', function(){
+            $("#iframe-responsive").attr('src', '');
+        });
+        $("#Modal-hosting").on('hide.bs.modal', function(){
+            $("#iframe-hosting").attr('src', '');
+        });
+        $("#Modal-ceo").on('hide.bs.modal', function(){
+            $("#iframe-ceo").attr('src', '');
+        });
+        $("#Modal-courses").on('hide.bs.modal', function(){
+            $("#iframe-courses").attr('src', '');
+        });
+        $("#Modal-design").on('hide.bs.modal', function(){
+            $("#iframe-design").attr('src', '');
+        });
+        $("#Modal-domain").on('hide.bs.modal', function(){
+            $("#iframe-domain").attr('src', '');
+        });
+        
+        /* Assign the initially stored url back to the iframe src
+        attribute when modal is displayed again */
+        $("#Modal-web").on('show.bs.modal', function(){
+            $("#iframe-web").attr('src', url);
+        });
+        $("#Modal-responsive").on('show.bs.modal', function(){
+            $("#iframe-responsive").attr('src', url);
+        });
+        $("#Modal-hosting").on('show.bs.modal', function(){
+            $("#iframe-hosting").attr('src', url);
+        });
+        $("#Modal-ceo").on('show.bs.modal', function(){
+            $("#iframe-ceo").attr('src', url);
+        });
+        $("#Modal-courses").on('show.bs.modal', function(){
+            $("#iframe-courses").attr('src', url);
+        });
+        $("#Modal-design").on('show.bs.modal', function(){
+            $("#iframe-design").attr('src', url);
+        });
+        $("#Modal-domain").on('show.bs.modal', function(){
+            $("#iframe-domain").attr('src', url);
+        });
+    });
+
+    //checkbox
+    var el1 = document.getElementById('btn-services1')
+    var el2 = document.getElementById('btn-services2')
+
+    var clickHandler = function () {
+        document.getElementById("menu").checked = true;
+        }
+    
+    el1.addEventListener('click', clickHandler)
+    el2.addEventListener('click', clickHandler)
+    
+    //mouseover
+    document.getElementById("services").addEventListener("mouseover", mouseOver);
+    document.getElementById("services").addEventListener("mouseout", mouseOut);
+    
+    function mouseOver() {
+        document.getElementById("menu").checked = true;
+    }
+    
+    function mouseOut() {
+        document.getElementById("menu").checked = true;
+    }
 })(jQuery); // End of use strict
