@@ -3102,6 +3102,7 @@ input[type=button].btn-block {
       width: 90%;
       height: 38%;  /*si lo dejo en auto me mantiene los margenes del 3%*/
       margin: 5%; /* width + 2* margin debe ser igual a 50% */
+      margin-bottom: 15%;
       margin-top: -10%;
       border-radius: 15px;
       padding: 20px; /* margenes de los costados entre texto y caja */
@@ -3171,17 +3172,16 @@ input[type=button].btn-block {
 
       .toggle + .style {
           min-height: 260px;
-          min-width: 280px;
-          width: 200px;
+          min-width: 1px;
+          width: 1px;
           height: 124px;
-          border-radius: 50%;
+          border-radius: 0%;
           cursor: pointer;
           transform: translate(-50%, -50%) scale(1);
           z-index: 5;
           display: block;
-          max-width: 200px;
           margin-bottom: 0;
-          background: #fed136; 
+          background: #faeec3; 
           color: #fff;
           font-size: 2.5em;
           padding-top: 75px;
@@ -3266,6 +3266,12 @@ input[type=button].btn-block {
       }
       
       .menu > .toggle:checked ~ .tab:nth-of-type(1) {
+        top: 0%;
+        left: 0px;
+        transition-delay: 0s;
+      }
+
+      .menu > .toggle:checked ~ .tab:nth-of-type(7) {
         top: -100%;
         left: 0px;
         transition-delay: 0s;
@@ -3307,8 +3313,10 @@ input[type=button].btn-block {
       }
       
       .icon-service{
-        margin-top: -15%;
-        font-size: 500%;
+        color: white;
+        font-size: 80px;
+        margin-top: 17%;
+        margin-left: 17%;
       }
       
       .icon-services1{
@@ -3355,9 +3363,9 @@ input[type=button].btn-block {
       
       p.text-service{
         color: black; 
-        margin-left: 27%; 
-        margin-top: 10%; 
-        font-size: 55px; 
+        margin-left: 18%; 
+        margin-top: -15%; 
+        font-size: 25px; 
         font-weight: lighter;
       }
       
@@ -3411,6 +3419,13 @@ input[type=button].btn-block {
         font-weight: lighter;
       }
     
+      .margin-single-video{
+        margin-bottom: 15%;
+      }
+    
+      .margin-double-video{
+        margin-bottom: -5%;
+      }
 }
 
 @media (min-width: 768px){
@@ -3498,6 +3513,13 @@ input[type=button].btn-block {
     z-index:2;
   }
 
+  .margin-single-video{
+    margin-bottom: 25%;
+  }
+
+  .margin-double-video{
+    margin-bottom: 0%;
+  }
 }
 
 @media (min-width: 992px) {
@@ -10911,43 +10933,43 @@ a{
 .menu > .toggle:checked ~ .tab:nth-of-type(1) {
   top: 0%;
   left: 0%;
-  transition-delay: 0.5s;
+  transition-delay: 0s;
 }
 
 .menu > .toggle:checked ~ .tab:nth-of-type(7) {
   top: -60%;
   left: 0%;
-  transition-delay: 0.625s;
+  transition-delay: 0.125s;
 }
 
 .menu > .toggle:checked ~ .tab:nth-of-type(2) {
   top: -30%;
   left: 315px;
-  transition-delay: 0.75s;
+  transition-delay: 0.25s;
 }
 
 .menu > .toggle:checked ~ .tab:nth-of-type(3) {
   top: 30%;
   left: 315px;
-  transition-delay: 0.875s;
+  transition-delay: 0.375s;
 }
 
 .menu > .toggle:checked ~ .tab:nth-of-type(4) {
   top: 60%;
   left: 0%;
-  transition-delay: 1s;
+  transition-delay: 0.5s;
 }
 
 .menu > .toggle:checked ~ .tab:nth-of-type(5) {
   top: 30%;
   left: -315px;
-  transition-delay: 1.125s;
+  transition-delay: 0.625s;
 }
 
 .menu > .toggle:checked ~ .tab:nth-of-type(6) {
   top: -30%;
   left: -315px;
-  transition-delay: 1.25s;
+  transition-delay: 0.75s;
 }
 
 .st-service{
@@ -11284,16 +11306,16 @@ section#contact form#contactForm :-ms-input-placeholder {
   }
   
   .toggle + .style {
-      width: 300px;
+      width: 1px;
       height: 300px;
-      border-radius: 50%;
+      border-radius: 0%;
       cursor: pointer;
       transform: translate(-50%, -50%) scale(1);
       z-index: 5;
       display: block;
       max-width: 300px;
       margin-bottom: 0;
-      background: #fed136;
+      background: #faeec3;
       color: #fff;
       font-size: 2.5em;
       padding-top: 100px;
@@ -11378,7 +11400,7 @@ section#contact form#contactForm :-ms-input-placeholder {
   }
   
   .menu > .toggle:checked ~ .tab:nth-of-type(1) {
-    top: -100%;
+    top: 0%;
     left: 0%;
     transition-delay: 0s;
   }
@@ -11412,6 +11434,12 @@ section#contact form#contactForm :-ms-input-placeholder {
     left: -500px;
     transition-delay: 0.625s;
   }
+
+  .menu > .toggle:checked ~ .tab:nth-of-type(7) {
+    top: -100%;
+    left: 0%;
+    transition-delay: 0s;
+  }
   
   .st-service{
     margin-top: 0%; 
@@ -11419,8 +11447,10 @@ section#contact form#contactForm :-ms-input-placeholder {
   }
   
   .icon-service{
-    margin-top: -15%;
-    font-size: 500%;
+    color: white;
+    font-size: 80px;
+    margin-top: 17%;
+    margin-left: 17%;
   }
   
   .icon-services1{
@@ -11467,9 +11497,9 @@ section#contact form#contactForm :-ms-input-placeholder {
   
   p.text-service{
     color: black; 
-    margin-left: 27%; 
-    margin-top: 10%; 
-    font-size: 55px; 
+    margin-left: 18%; 
+    margin-top: -15%; 
+    font-size: 25px; 
     font-weight: lighter;
   }
   
@@ -11492,7 +11522,7 @@ section#contact form#contactForm :-ms-input-placeholder {
   p.text-service3{
     color: black; 
     margin-left: 20%; 
-    margin-top: -10%; 
+    margin-top: -15%; 
     font-size: 25px; 
     font-weight: lighter;
   }
@@ -11521,5 +11551,13 @@ section#contact form#contactForm :-ms-input-placeholder {
     margin-top: -15%; 
     font-size: 25px; 
     font-weight: lighter;
+  }
+
+  .margin-single-video{
+    margin-bottom: 40%;
+  }
+
+  .margin-double-video{
+    margin-bottom: 0%;
   }
 }

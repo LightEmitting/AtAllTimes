@@ -53,13 +53,13 @@
         <section class="page-section row bg-about" id="about">
             <div class="container st-about">
                 <div class="column box">
-                    <h2 class="font-title font-title-mp">Quiénes Somos</h2>
-                    <p class="font-text font-text-mp">Lorem ipsum dolor sit amet, consectetur 
+                    <h2 class="font-title">Quiénes Somos</h2>
+                    <p class="font-text">Lorem ipsum dolor sit amet, consectetur 
                         adipisicing elit. Minima maxime quam architecto quo inventore harum ex 
                         magni, dicta impedit.
                         Lorem ipsum dolor sit amet, consectetur 
                         adipisicing elit. </p>
-                    <a class="btn btn-secondary btn-xl btn-secondary-mp js-scroll-trigger" id="btn-services2" href="#services">Nuestros Servicios</a>
+                    <a class="btn btn-secondary btn-xl text-lowercase js-scroll-trigger" id="btn-services2" href="#services">Nuestros Servicios</a>
                 </div>
                 <div class="column" style="position: relative;">
                     <img src="assets/img/mancha.png" class="mancha mancha-mp" alt="fondo mancha">
@@ -78,7 +78,7 @@
                     <label class="style" for='menu'>
                     </label>
 
-                    <a data-toggle="modal" data-target="#Modal-responsive" class='tab' href='#services'>
+                    <a data-toggle="modal" data-target="#Modal-web" class='tab' href='#services'>
                         <p class="fas fa-globe icon-service"></p>
                         <p class="text-service">Webs</p>
                     </a>
@@ -90,9 +90,9 @@
                         <p class="fas fa-home icon-services2"></p>
                         <p class="text-service2">Hosting</p>
                     </a>
-                    <a data-toggle="modal" data-target="#Modal-ceo" class='tab' href='#services'>
+                    <a data-toggle="modal" data-target="#Modal-seo" class='tab' href='#services'>
                         <p class="fas fa-mouse-pointer icon-services3"></p>
-                        <p class="text-service3">CEO</p>
+                        <p class="text-service3">SEO</p>
                     </a>
                     <a data-toggle="modal" data-target="#Modal-courses" class='tab' href='#services'>
                         <p class="fas fa-graduation-cap icon-services4"></p>
@@ -112,23 +112,37 @@
 
         <!-- modal web -->
         <div class="modal fade" id="Modal-web" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
-            <div class="modal-dialog">
+            <div class="modal-dialog" >
                 <div class="modal-content" >
                     <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Web Responsiva</h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+                        <h4 class="modal-title" id="myModalLabel">Web</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
-                    <div class="modal-body" style="margin-bottom: 25%">
-                        <p class="font-text font-text-mp" style="text-align: center;">Lorem ipsum dolor sit amet, consectetur 
-                            adipisicing elit. Minima maxime quam architecto quo inventore harum ex 
-                            magni, dicta impedit.
-                            Lorem ipsum dolor sit amet, consectetur 
-                            adipisicing elit. </p>
-                    <iframe id="iframe-web" style="position: relative; top: 0; left: 0; width: 100%; height: 80%; max-width: 700px; max-height: auto;"
-                            src="https://www.youtube.com/embed/h4E1J6TNoLY">
-                    </iframe>
+                    <div class="modal-body margin-double-video">
+                        <p class="font-text" style="text-align: center;">Lorem ipsum dolor sit amet, consectetur 
+                            adipisicing. </p>
+                        <div class="modal-body">
+                            <p class="font-text" style="text-align: center; font-size: small;">Lorem ipsum dolor sit amet, consectetur 
+                                adipisicing elit. Minima maxime quam architecto quo inventore harum ex 
+                                magni, dicta impedit.
+                                Lorem ipsum dolor sit amet, consectetur 
+                                adipisicing elit.
+                            </p>
+                            <iframe id="iframe-seo" style="position: relative; top: 0; left: 0; width: 100%; height: 80%; max-width: auto; min-height: 250px;"
+                                src="https://www.youtube.com/embed/h4E1J6TNoLY">
+                            </iframe> 
+                            <p class="font-text" style="text-align: center; font-size: small;">Lorem ipsum dolor sit amet, consectetur 
+                                adipisicing elit. Minima maxime quam architecto quo inventore harum ex 
+                                magni, dicta impedit.
+                                Lorem ipsum dolor sit amet, consectetur 
+                                adipisicing elit. 
+                            </p>
+                            <iframe id="iframe-seo" style="position: relative; top: 0; left: 0; width: 100%; height: 80%; max-width: auto; min-height:250px;"
+                                src="https://www.youtube.com/embed/h4E1J6TNoLY">
+                            </iframe> 
+                        </div>
                     </div>
                 </div>
             </div>
@@ -144,8 +158,8 @@
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <div class="modal-body" style="margin-bottom: 25%">
-                        <p class="font-text font-text-mp" style="text-align: center;">Lorem ipsum dolor sit amet, consectetur 
+                    <div class="modal-body margin-single-video">
+                        <p class="font-text" style="text-align: center;">Lorem ipsum dolor sit amet, consectetur 
                             adipisicing elit. Minima maxime quam architecto quo inventore harum ex 
                             magni, dicta impedit.
                             Lorem ipsum dolor sit amet, consectetur 
@@ -163,17 +177,16 @@
             <div class="modal-dialog">
                 <div class="modal-content" >
                     <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Web Responsiva</h4>
+                    <h4 class="modal-title" id="myModalLabel">Hosting Web</h4>
                     <button type="button" id="close-modal" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                     </div>
-                    <div class="modal-body" style="margin-bottom: 25%">
-                        <p class="font-text font-text-mp" style="text-align: center;">Lorem ipsum dolor sit amet, consectetur 
+                    <div class="modal-body margin-single-video">
+                        <p class="font-text" style="text-align: center;">Lorem ipsum dolor sit amet, consectetur 
                             adipisicing elit. Minima maxime quam architecto quo inventore harum ex 
                             magni, dicta impedit.
-                            Lorem ipsum dolor sit amet, consectetur 
-                            adipisicing elit. </p>
+                             </p>
                         <iframe id="iframe-hosting" style="position: relative; top: 0; left: 0; width: 100%; height: 80%; max-width: 700px; max-height: auto;"
                                 src="https://www.youtube.com/embed/h4E1J6TNoLY?cc_load_policy=1">
                         </iframe>
@@ -182,23 +195,23 @@
             </div>
         </div>
           
-        <!-- modal ceo -->
-          <div class="modal fade" id="Modal-ceo" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+        <!-- modal seo -->
+          <div class="modal fade" id="Modal-seo" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content" >
                     <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Web Responsiva</h4>
+                    <h4 class="modal-title" id="myModalLabel">SEO</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                     </div>
-                    <div class="modal-body" style="margin-bottom: 25%">
-                        <p class="font-text font-text-mp" style="text-align: center;">Lorem ipsum dolor sit amet, consectetur 
+                    <div class="modal-body margin-single-video">
+                        <p class="font-text" style="text-align: center;">Lorem ipsum dolor sit amet, consectetur 
                             adipisicing elit. Minima maxime quam architecto quo inventore harum ex 
                             magni, dicta impedit.
                             Lorem ipsum dolor sit amet, consectetur 
                             adipisicing elit. </p>
-                        <iframe id="iframe-ceo" style="position: relative; top: 0; left: 0; width: 100%; height: 80%; max-width: 700px; max-height: auto;"
+                        <iframe id="iframe-seo" style="position: relative; top: 0; left: 0; width: 100%; height: 80%; max-width: 700px; max-height: auto;"
                                 src="https://www.youtube.com/embed/h4E1J6TNoLY">
                         </iframe> 
                     </div>
@@ -211,33 +224,34 @@
             <div class="modal-dialog">
                 <div class="modal-content" >
                     <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">E-Learning</h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+                        <h4 class="modal-title" id="myModalLabel">E-Learning</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
-                    <div class="modal-body" style="margin-bottom: 25%">
-                        <p class="font-text font-text-mp" style="text-align: center;">Lorem ipsum dolor sit amet, consectetur 
+                    <div class="modal-body margin-double-video" >
+                        <p class="font-text" style="text-align: center;">Lorem ipsum dolor sit amet, consectetur 
                             adipisicing. </p>
-                        <div class="modal-body" style="margin-bottom: 25%">
-                            <p class="font-text font-text-mp" style="text-align: center; font-size: small;">Lorem ipsum dolor sit amet, consectetur 
+                        <div class="modal-body ">
+                            <p class="font-text" style="text-align: center; font-size: small;">Lorem ipsum dolor sit amet, consectetur 
                                 adipisicing elit. Minima maxime quam architecto quo inventore harum ex 
                                 magni, dicta impedit.
                                 Lorem ipsum dolor sit amet, consectetur 
-                                adipisicing elit. </p>
-                            <iframe id="iframe-courses" style="position: relative; top: 0; left: 0; width: 100%; height: auto; max-width: 700px; max-height: auto;"
-                                    src="https://www.youtube.com/embed/h4E1J6TNoLY">
+                                adipisicing elit.
+                            </p>
+                            <iframe id="iframe-seo" style="position: relative; top: 0; left: 0; width: 100%; height: 80%; max-width: auto; min-height: 250px;"
+                                src="https://www.youtube.com/embed/h4E1J6TNoLY">
                             </iframe> 
-                            <div class="modal-body" style="margin-bottom: 25%;">
-                                <p class="font-text font-text-mp" style="text-align: center; font-size: small;">Lorem ipsum dolor sit amet, consectetur 
-                                    adipisicing elit. Minima maxime quam architecto quo inventore harum ex 
-                                    magni, dicta impedit.
-                                    Lorem ipsum dolor sit amet, consectetur 
-                                    adipisicing elit. </p>
-                            <iframe id="iframe-courses" style="position: relative; top: 0; left: 0; width: 100%; height: 100%; max-width: 700px; max-height: auto;"
-                                    src="https://www.youtube.com/embed/h4E1J6TNoLY">
+        
+                            <p class="font-text" style="text-align: center; font-size: small;">Lorem ipsum dolor sit amet, consectetur 
+                                adipisicing elit. Minima maxime quam architecto quo inventore harum ex 
+                                magni, dicta impedit.
+                                Lorem ipsum dolor sit amet, consectetur 
+                                adipisicing elit. 
+                            </p>
+                            <iframe id="iframe-seo" style="position: relative; top: 0; left: 0; width: 100%; height: 80%; max-width: auto; min-height:250px;"
+                                src="https://www.youtube.com/embed/h4E1J6TNoLY">
                             </iframe> 
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -254,8 +268,8 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                     </div>
-                    <div class="modal-body" style="margin-bottom: 25%">
-                        <p class="font-text font-text-mp" style="text-align: center;">Lorem ipsum dolor sit amet, consectetur 
+                    <div class="modal-body margin-single-video">
+                        <p class="font-text" style="text-align: center;">Lorem ipsum dolor sit amet, consectetur 
                             adipisicing elit. Minima maxime quam architecto quo inventore harum ex 
                             magni, dicta impedit.
                             Lorem ipsum dolor sit amet, consectetur 
@@ -278,8 +292,8 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                     </div>
-                    <div class="modal-body" style="margin-bottom: 25%">
-                        <p class="font-text font-text-mp" style="text-align: center;">Lorem ipsum dolor sit amet, consectetur 
+                    <div class="modal-body margin-single-video">
+                        <p class="font-text" style="text-align: center;">Lorem ipsum dolor sit amet, consectetur 
                             adipisicing elit. Minima maxime quam architecto quo inventore harum ex 
                             magni, dicta impedit.
                             Lorem ipsum dolor sit amet, consectetur 
@@ -291,6 +305,9 @@
                 </div>
             </div>
         </div>
+
+
+
         <!-- Portfolio Grid-->
         <section class="page-section bg-light" id="portfolio">
             <div class="container">

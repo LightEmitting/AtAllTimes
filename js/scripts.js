@@ -61,7 +61,7 @@
         var url = $("#iframe-web").attr('src');
         var url = $("#iframe-responsive").attr('src');
         var url = $("#iframe-hosting").attr('src');
-        var url = $("#iframe-ceo").attr('src');
+        var url = $("#iframe-seo").attr('src');
         var url = $("#iframe-courses").attr('src');
         var url = $("#iframe-design").attr('src');
         var url = $("#iframe-domain").attr('src');
@@ -77,8 +77,8 @@
         $("#Modal-hosting").on('hide.bs.modal', function(){
             $("#iframe-hosting").attr('src', '');
         });
-        $("#Modal-ceo").on('hide.bs.modal', function(){
-            $("#iframe-ceo").attr('src', '');
+        $("#Modal-seo").on('hide.bs.modal', function(){
+            $("#iframe-seo").attr('src', '');
         });
         $("#Modal-courses").on('hide.bs.modal', function(){
             $("#iframe-courses").attr('src', '');
@@ -101,8 +101,8 @@
         $("#Modal-hosting").on('show.bs.modal', function(){
             $("#iframe-hosting").attr('src', url);
         });
-        $("#Modal-ceo").on('show.bs.modal', function(){
-            $("#iframe-ceo").attr('src', url);
+        $("#Modal-seo").on('show.bs.modal', function(){
+            $("#iframe-seo").attr('src', url);
         });
         $("#Modal-courses").on('show.bs.modal', function(){
             $("#iframe-courses").attr('src', url);
@@ -118,23 +118,30 @@
     //checkbox
     var el1 = document.getElementById('btn-services1')
     var el2 = document.getElementById('btn-services2')
-
     var clickHandler = function () {
-        document.getElementById("menu").checked = true;
-        }
-    
+        setTimeout(function(){         //delay de 0.5 seg
+            document.getElementById("menu").checked = true; //checkbox = ON
+        }, 500);}
     el1.addEventListener('click', clickHandler)
     el2.addEventListener('click', clickHandler)
-    
+
+
     //mouseover
     document.getElementById("services").addEventListener("mouseover", mouseOver);
     document.getElementById("services").addEventListener("mouseout", mouseOut);
-    
     function mouseOver() {
         document.getElementById("menu").checked = true;
     }
-    
     function mouseOut() {
         document.getElementById("menu").checked = true;
     }
+
+    //touchover
+    var el3 = document.getElementById("services");
+    function handleStart(ev)
+    {
+        document.getElementById("menu").checked = true;
+    }
+    el3.addEventListener("touchstart", handleStart, false);
+
 })(jQuery); // End of use strict
