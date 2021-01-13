@@ -58,18 +58,23 @@
     $(document).ready(function(){
         /* Get iframe src attribute value i.e. YouTube video url
         and store it in a variable */
-        var url = $("#iframe-web").attr('src');
+        var url = $("#iframe-web1").attr('src');
+        var url = $("#iframe-web2").attr('src');
         var url = $("#iframe-responsive").attr('src');
         var url = $("#iframe-hosting").attr('src');
         var url = $("#iframe-seo").attr('src');
-        var url = $("#iframe-courses").attr('src');
+        var url = $("#iframe-courses1").attr('src');
+        var url = $("#iframe-courses2").attr('src');
         var url = $("#iframe-design").attr('src');
         var url = $("#iframe-domain").attr('src');
         
         /* Assign empty url value to the iframe src attribute when
         modal hide, which stop the video playing */
         $("#Modal-web").on('hide.bs.modal', function(){
-            $("#iframe-web").attr('src', '');
+            $("#iframe-web1").attr('src', '');
+        });
+        $("#Modal-web").on('hide.bs.modal', function(){
+            $("#iframe-web2").attr('src', '');
         });
         $("#Modal-responsive").on('hide.bs.modal', function(){
             $("#iframe-responsive").attr('src', '');
@@ -81,7 +86,10 @@
             $("#iframe-seo").attr('src', '');
         });
         $("#Modal-courses").on('hide.bs.modal', function(){
-            $("#iframe-courses").attr('src', '');
+            $("#iframe-courses1").attr('src', '');
+        });
+        $("#Modal-courses").on('hide.bs.modal', function(){
+            $("#iframe-courses2").attr('src', '');
         });
         $("#Modal-design").on('hide.bs.modal', function(){
             $("#iframe-design").attr('src', '');
@@ -124,7 +132,6 @@
         }, 500);}
     el1.addEventListener('click', clickHandler)
     el2.addEventListener('click', clickHandler)
-
 
     //mouseover
     document.getElementById("services").addEventListener("mouseover", mouseOver);

@@ -552,7 +552,71 @@ pre code {
 }
 
 .bg-service{
-  background: linear-gradient(to bottom, #faeec3 70%, white );
+  background: linear-gradient(to bottom, #faeec3 70%, white ); 
+}
+
+
+
+
+
+.pricing .card {
+  border: none;
+  border-radius: 1rem;
+  transition: all 0.2s;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.pricing hr {
+  margin: 1.5rem 0;
+}
+
+.pricing .card-title {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+}
+
+.pricing .card-price {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.pricing .card-price .period {
+  font-size: 0.8rem;
+
+}
+
+.pricing ul li {
+  margin-bottom: 1rem;
+}
+
+.pricing .text-muted {
+  opacity: 0.7;
+}
+
+.pricing .btn {
+  font-size: 80%;
+  border-radius: 5rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  padding: 1rem;
+  opacity: 0.7;
+  transition: all 0.2s;
+}
+
+
+/* Hover Effects on Card */
+
+@media (min-width: 992px) {
+  .pricing .card:hover {
+    margin-top: -.25rem;
+    margin-bottom: .25rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+  }
+  .pricing .card:hover .btn {
+    opacity: 1;
+  }
 }
 
 @media (min-width: 576px) {
@@ -3069,8 +3133,19 @@ input[type=button].btn-block {
     padding-bottom: 20rem;
     text-align: center;
     color: #fff;
-/*    background-image: url("../assets/img/atalltimes-web2.png");*/
     background: linear-gradient(to bottom, rgba(255,255,255,0) 95%, #f6d53f), url(../assets/img/atalltimes-web2.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: 100% 100%;   
+  }
+  
+  section#contact {
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(to top, rgba(255,255,255,0) 90%, #faeec3), url(../assets/img/AaT-contact2.png);
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -3103,7 +3178,7 @@ input[type=button].btn-block {
       height: 38%;  /*si lo dejo en auto me mantiene los margenes del 3%*/
       margin: 5%; /* width + 2* margin debe ser igual a 50% */
       margin-bottom: 15%;
-      margin-top: -10%;
+      margin-top: -5%;
       border-radius: 15px;
       padding: 20px; /* margenes de los costados entre texto y caja */
     }
@@ -3426,6 +3501,41 @@ input[type=button].btn-block {
       .margin-double-video{
         margin-bottom: -5%;
       }
+
+      .bg-pricing{ 
+        background: linear-gradient(to top, rgba(255,255,255,0) 90%, rgba(255,255,255,1)), url(../assets/img/arcoiris-pintado2.png);
+        width: 100%; 
+        height: 100vh; 
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        }
+
+      .scale{
+        scale: 100%;
+      }
+
+      .col-lg-3 {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+
+      .fa-ul{
+        line-height: 1px;
+      }
+
+      .margin-contact1{
+        margin-top: -20%;
+      }
+
+      .margin-contact2{
+        margin-top: 20%;
+      }
+
+      .margin-contact3{
+        margin-top: 20%; 
+        margin-bottom: -50%;
+      }
 }
 
 @media (min-width: 768px){
@@ -3434,10 +3544,17 @@ input[type=button].btn-block {
     padding-bottom: 6rem;
     text-align: center;
     color: #fff;
-/*    background-image: url("../assets/img/atalltimes-web1.png"); */
     background: linear-gradient(to bottom, rgba(255,255,255,0) 95%, #f6d53f), url(../assets/img/atalltimes-web1.png);
     background-repeat: no-repeat;
     background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;       
+  }
+
+  section#contact {
+    background-color: #212529;
+    background: linear-gradient(to top, rgba(255,255,255,0) 90%, #faeec3), url(../assets/img/AaT-contact1.png);
+    background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;       
   }
@@ -3471,7 +3588,9 @@ input[type=button].btn-block {
   width: 50%;
   text-align: center;
   }
-
+  .scale{
+    scale: 105%;
+  }
 .st-about{
   margin-top: -12%; 
   margin-bottom: -5%;
@@ -3513,12 +3632,38 @@ input[type=button].btn-block {
     z-index:2;
   }
 
+  .index-pricing{
+    z-index: 1;
+  }
   .margin-single-video{
     margin-bottom: 25%;
   }
 
   .margin-double-video{
     margin-bottom: 0%;
+  }
+
+  .bg-pricing{ 
+    background: linear-gradient(to top, rgba(255,255,255,0) 90%, rgba(255,255,255,1)), url(../assets/img/arcoiris-pintado.png);
+    width: 100%; 
+    height: 100vh; 
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    }
+  
+  .margin-contact1{
+    margin-top: -5%;   
+    margin-bottom: 5%;
+  }
+
+  .margin-contact2{
+    margin-top: 5%;
+  }  
+
+  .margin-contact3{
+    margin-top: 5%; 
+    margin-bottom: -10%;
   }
 }
 
@@ -4828,7 +4973,7 @@ input[type=button].btn-block {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color: rgba(254, 254, 254, 0.6);
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
@@ -10283,6 +10428,10 @@ button.bg-dark:focus {
   color: #fed136 !important;
 }
 
+.text-primary-aux {
+  color: black !important;
+}
+
 a.text-primary:hover, a.text-primary:focus {
   color: #e6b301 !important;
 }
@@ -10353,6 +10502,10 @@ a.text-dark:hover, a.text-dark:focus {
 
 .text-black-50 {
   color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.text-black {
+  color: rgba(0, 0, 0, 1) !important;
 }
 
 .text-white-50 {
@@ -11083,6 +11236,7 @@ p.text-service6{
   font-weight: lighter;
 }
 
+
 }
 @media (min-width: 992px) {
   .timeline > li {
@@ -11138,14 +11292,9 @@ p.text-service6{
   margin-bottom: 0;
 }
 
-section#contact {
-  background-color: #212529;
-  background-image: url("../assets/img/map-image.png");
-  background-repeat: no-repeat;
-  background-position: center;
-}
 section#contact .section-heading {
-  color: #fff;
+  color: black;
+  font-size: 60px;
 }
 section#contact form#contactForm .form-group {
   margin-bottom: 1.5rem;
@@ -11213,12 +11362,23 @@ section#contact form#contactForm :-ms-input-placeholder {
     text-align: center;
     color: #fff;
 /*    background-image: url("../assets/img/atalltimes-web1.png"); */
-    background: linear-gradient(to bottom, rgba(255,255,255,0) 95%, #f6d53f), url(../assets/img/atalltimes-web1.png);
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 95%, #faeec3), url(../assets/img/atalltimes-web1.png);
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
     background-size: cover;
   }
+
+  section#contact {
+    padding-top: 15%;
+    padding-bottom: 15%;
+    background-color: #212529;
+    background: linear-gradient(to top, rgba(255,255,255,0) 90%, #faeec3), url(../assets/img/AaT-contact1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;       
+  }
+  
   header.masthead .masthead-subheading {
     font-size: 2.25rem;
     font-style: italic;
@@ -11264,7 +11424,7 @@ section#contact form#contactForm :-ms-input-placeholder {
     }
   
     .font-text{
-      font-size: 25px;
+      font-size: 23.5px;
     }
   
     .mancha{
@@ -11559,5 +11719,15 @@ section#contact form#contactForm :-ms-input-placeholder {
 
   .margin-double-video{
     margin-bottom: 0%;
+  }
+
+  .scale{
+    margin-top: 40%;
+    scale: 105%;
+  }
+
+  .margin-contact3{
+    margin-top: 15%; 
+    margin-bottom: -20%;
   }
 }
