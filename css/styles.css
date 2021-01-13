@@ -555,9 +555,9 @@ pre code {
   background: linear-gradient(to bottom, #faeec3 70%, white ); 
 }
 
-
-
-
+.bg-pricing{
+  background: linear-gradient(to top, #f6d53f 70%, white ); 
+}
 
 .pricing .card {
   border: none;
@@ -3145,7 +3145,7 @@ input[type=button].btn-block {
     padding-bottom: 20rem;
     text-align: center;
     color: #fff;
-    background: linear-gradient(to top, rgba(255,255,255,0) 90%, #faeec3), url(../assets/img/AaT-contact2.png);
+    background: linear-gradient(to top, rgba(255,255,255,0) 90%, #f6d53f), url(../assets/img/AaT-contact2.png);
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -3501,7 +3501,7 @@ input[type=button].btn-block {
       .margin-double-video{
         margin-bottom: -5%;
       }
-
+/*
       .bg-pricing{ 
         background: linear-gradient(to top, rgba(255,255,255,0) 90%, rgba(255,255,255,1)), url(../assets/img/arcoiris-pintado2.png);
         width: 100%; 
@@ -3510,9 +3510,10 @@ input[type=button].btn-block {
         background-position: center center;
         background-size: cover;
         }
-
+*/
       .scale{
         scale: 100%;
+        margin-top: -25%;
       }
 
       .col-lg-3 {
@@ -3521,11 +3522,22 @@ input[type=button].btn-block {
       }
 
       .fa-ul{
-        line-height: 1px;
+        line-height: 0.4;
+      }
+
+      .font-size{
+        font-size: 10px;
+        margin-left: -15px;
+      }
+
+      .font-10{
+        margin-top: -30px;
+        font-size: 14px;
+        margin-bottom: -40px;
       }
 
       .margin-contact1{
-        margin-top: -20%;
+        margin-top: -80%;
       }
 
       .margin-contact2{
@@ -3533,8 +3545,8 @@ input[type=button].btn-block {
       }
 
       .margin-contact3{
-        margin-top: 20%; 
-        margin-bottom: -50%;
+        margin-top: 10%; 
+        margin-bottom: -90%;
       }
 }
 
@@ -3553,7 +3565,7 @@ input[type=button].btn-block {
 
   section#contact {
     background-color: #212529;
-    background: linear-gradient(to top, rgba(255,255,255,0) 90%, #faeec3), url(../assets/img/AaT-contact1.png);
+    background: linear-gradient(to top, rgba(255,255,255,0) 90%, #f6d53f), url(../assets/img/AaT-contact1.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;       
@@ -3642,8 +3654,9 @@ input[type=button].btn-block {
   .margin-double-video{
     margin-bottom: 0%;
   }
-
+/*
   .bg-pricing{ 
+    opacity: 0.8;
     background: linear-gradient(to top, rgba(255,255,255,0) 90%, rgba(255,255,255,1)), url(../assets/img/arcoiris-pintado.png);
     width: 100%; 
     height: 100vh; 
@@ -3651,7 +3664,11 @@ input[type=button].btn-block {
     background-position: center center;
     background-size: cover;
     }
-  
+    */
+  .font-10{
+      font-size: 19px;
+    }
+
   .margin-contact1{
     margin-top: -5%;   
     margin-bottom: 5%;
@@ -4976,7 +4993,9 @@ input[type=button].btn-block {
   background-color: rgba(254, 254, 254, 0.6);
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+  border-radius: 15px;
+  border: 5px solid rgba(255,255,255,1);
+
 }
 .card > hr {
   margin-right: 0;
@@ -10717,6 +10736,7 @@ img::-moz-selection {
   background-color: #fed136;
   border: 0;
 }
+
 #mainNav .navbar-brand {
   color: #fed136;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -10724,6 +10744,7 @@ img::-moz-selection {
   letter-spacing: 0.0625em;
   text-transform: uppercase;
 }
+
 #mainNav .navbar-brand img {
   height: 1.5rem;
 }
@@ -11373,7 +11394,7 @@ section#contact form#contactForm :-ms-input-placeholder {
     padding-top: 15%;
     padding-bottom: 15%;
     background-color: #212529;
-    background: linear-gradient(to top, rgba(255,255,255,0) 90%, #faeec3), url(../assets/img/AaT-contact1.png);
+    background: linear-gradient(to top, rgba(255,255,255,0) 90%, #f6d53f), url(../assets/img/AaT-contact1.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;       
