@@ -1,7 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
+        <script type="text/javascript">
+            var host = "atalltimes.com.ar";
+            if((host == window.location.host) && (window.location.protocol != "https:"))
+                window.location.protocol = "https"
+        </script>
         <meta charset="utf-8" />
+        <link rel="canonical" href="https://atalltimes.com.ar" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
@@ -41,7 +47,7 @@
                     <ul class="navbar-nav text-uppercase ml-auto">
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Quiénes Somos</a></li>
                         <li class="nav-item" ><a class="nav-link js-scroll-trigger" id="btn-services1" href="#services">Servicios</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#pricing">Precios</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#pricing">Planes</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contacto</a></li>
                     </ul>
                 </div>
@@ -64,15 +70,17 @@
         <section class="page-section row bg-about" id="about">
             <div class="container st-about">
                 <div class="column box">
-                    <p class="font-text font-italic1">¡Hola! En AtAllTimes brindamos soluciones tecnológicas de Buenos Aires para el mundo. 
-                        Nuestra misión es lograr que tu negocio crezca por ello te ofrecemos un servicio a bajo coste de forma rápida y segura. 
+                    <p class="font-text font-italic">¡Hola! <b>AtAllTimes</b> está formado por un equipo de jóvenes programadores, diseñadores y correctores 
+                        de texto que amamos lo que hacemos.<br>Pero ¿Qué hacemos? Ofrecemos soluciones IT, por esta razón te proponemos que nos cuentes 
+                        lo que tenés en mente y nosotros nos encargamos del resto.
+
                     </p>
                     <a class="btn btn-secondary btn-xl js-scroll-trigger" id="btn-services2" href="#services">Nuestros Servicios</a>
                 </div>
                 <div class="column" style="position: relative;">
                     <img src="assets/img/mancha.png" class="mancha" alt="fondo mancha">
                     <iframe class="iframe" id="iframe-about"
-                    src="https://www.youtube.com/embed/h4E1J6TNoLY?cc_load_policy=1" allow='autoplay'>
+                    src="https://www.youtube.com/embed/i09jPeYeHTQ?cc_load_policy=1" allow='autoplay'>
                     </iframe> 
                 </div>
             </div>
@@ -104,7 +112,7 @@
                     </a>
                     <a data-toggle="modal" data-target="#Modal-courses" class='tab' href='#services'>
                         <p class="fas fa-graduation-cap icon-services4"></p>
-                        <p class="text-service font-italic1">Cursos</p>
+                        <p class="text-service font-italic1">E-Learning</p>
                     </a>
                     <a data-toggle="modal" data-target="#Modal-design" class='tab' href='#services'>
                         <P class="far fa-gem icon-services5"></P>
@@ -128,16 +136,16 @@
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <div class="modal-body margin-double-video">
+                    <div class="modal-body margin-single-video-55">
                         <p class="font-text font-italic4" style="text-align: center;">Encontrá el sitio que mejor se adapta a tus necesidades. </p>
                         <div class="modal-body">
                             <p class="font-text" style="text-align: center;">¿Qué es un sitio web dinámico?<br>¿Tiene costo de mantenimiento?</p>
-                            <iframe id="iframe-web1" style="position: relative; top: 0; left: 0; width: 100%; height: 80%; max-width: auto; min-height: 250px;"
-                                src="https://www.youtube.com/embed/h4E1J6TNoLY">
+                            <iframe id="iframe-web1" class="iframe-modal"
+                                src="https://www.youtube.com/embed/Qoowjn-Xjn0">
                             </iframe> 
                             <p class="font-text" style="text-align: center;">¿Qué es un sitio web estático?<br>¿Tiene costo de mantenimiento?</p>
-                            <iframe id="iframe-web2" style="position: relative; top: 0; left: 0; width: 100%; height: 80%; max-width: auto; min-height:250px;"
-                                src="https://www.youtube.com/embed/h4E1J6TNoLY">
+                            <iframe id="iframe-web2" class="iframe-modal"
+                                src="https://www.youtube.com/embed/yUPwrZjZ53w">
                             </iframe> 
                         </div>
                     </div>
@@ -155,14 +163,17 @@
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <div class="modal-body margin-single-video">
-                        <p class="font-text font-italic4" style="text-align: center;">¿Notebook, Tablet o Smartphone?</p>
-                        <p class="font-text" style="text-align: center;">Tu sitio se verá excelente desde cualquier dispositivo, sin importar su tamaño. </p>
-                        <iframe id="iframe-responsive" style="position: relative; top: 0; left: 0; width: 100%; height: 80%; max-width: 700px; max-height: auto;"
-                                src="https://www.youtube.com/embed/h4E1J6TNoLY?cc_load_policy=1">
+                    <div class="modal-body margin-single-video-55">
+                        <p class="font-text font-italic4" style="text-align: center;">¿Notebook, Tablet o Smartphone?<p>
+                        <p class="font-text" style="text-align: center;">
+                            Tu sitio se verá excelente desde cualquier dispositivo, sin importar su tamaño.
+                            Tu sitio se verá excelente desde cualquier dispositivo, sin importar su tamaño.
+                            Tu sitio se verá excelente desde cualquier dispositivo, sin importar su tamaño.
+                            </p>
+                        <iframe id="iframe-domain" class="iframe-modal"
+                                src="https://www.youtube.com/embed/CKycCq-ZtT0">
                         </iframe>
-                    </div>
-                </div>
+                    </div>                </div>
             </div>
         </div>
 
@@ -176,11 +187,14 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                     </div>
-                    <div class="modal-body margin-single-video">
+                    <div class="modal-body margin-single-video-55">
                         <p class="font-text font-italic4" style="text-align: center;">¿Donde corre el código del sitio web?</p>
-                        <p class="font-text" style="text-align: center;">Trabajamos con los mejores proveedores de hosting asegurando 24/7 de funcionamiento ininterrumpido del sitio.</p>
-                        <iframe id="iframe-hosting" style="position: relative; top: 0; left: 0; width: 100%; height: 80%; max-width: 700px; max-height: auto;"
-                                src="https://www.youtube.com/embed/h4E1J6TNoLY?cc_load_policy=1">
+                        <p class="font-text" style="text-align: center;">
+                            Trabajamos con los mejores proveedores de hosting asegurando 24/7 de funcionamiento ininterrumpido del sitio.
+                            Trabajamos con los mejores proveedores de hosting asegurando 24/7 de funcionamiento ininterrumpido del sitio.
+                        </p>
+                        <iframe id="iframe-hosting" class="iframe-modal"
+                                src="https://www.youtube.com/embed/Ljp4e-xrWRs?cc_load_policy=1">
                         </iframe>
                     </div>
                 </div>
@@ -197,13 +211,13 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                     </div>
-                    <div class="modal-body margin-single-video">
+                    <div class="modal-body margin-single-video-55">
                         <p class="font-text font-italic4" style="text-align: center;">¿Qué es el SEO de un sitio?<p>
                         <p class="font-text" style="text-align: center;">
                             Es el posicionamiento en buscadores, para ello se aprican diferentes tecnicas basandose en
                             las buenas prácticas de programación, estadísticas y rendimiendo del sitio.</p>
-                        <iframe id="iframe-seo" style="position: relative; top: 0; left: 0; width: 100%; height: 80%; max-width: 700px; max-height: auto;"
-                                src="https://www.youtube.com/embed/h4E1J6TNoLY">
+                        <iframe id="iframe-seo" class="iframe-modal"
+                                src="https://www.youtube.com/embed/_0ekogaf3ZI">
                         </iframe> 
                     </div>
                 </div>
@@ -220,18 +234,18 @@
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <div class="modal-body margin-double-video" >
-                        <p class="font-text font-italic4" style="text-align: center;">Conocé nuestros mejores cursos.</p>
+                    <div class="modal-body margin-single-video-55" >
+                        <p class="font-text font-italic4" style="text-align: center;">Conocé nuestros mejores cursos. Aprendé a demanda.</p>
                         <div class="modal-body ">
                             <p class="font-text" style="text-align: center;">Curso Web intensivo: convertite el 
                             programador full stack.</p>
-                            <iframe id="iframe-courses1" style="position: relative; top: 0; left: 0; width: 100%; height: 80%; max-width: auto; min-height: 250px;"
+                            <iframe id="iframe-courses1" class="iframe-modal "
                                 src="https://www.youtube.com/embed/h4E1J6TNoLY">
                             </iframe> 
         
                             <p class="font-text font-italic4" style="text-align: center;">Crear Un Sitio Web con HTML-CSS y Django-Python ! [2020] 
                             </p>
-                            <iframe id="iframe-courses2" style="position: relative; top: 0; left: 0; width: 100%; height: 80%; max-width: auto; min-height:250px;"
+                            <iframe id="iframe-courses2" class="iframe-modal"
                                 src="https://www.youtube.com/embed/h4E1J6TNoLY">
                             </iframe> 
                         </div>
@@ -250,12 +264,14 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                     </div>
-                    <div class="modal-body margin-single-video">
+                    <div class="modal-body margin-single-video-55">
                         <p class="font-text font-italic4" style="text-align: center;">¿Es necesario definir un diseño?<p>
                         <p class="font-text" style="text-align: center;">
+                        Para que las partes sepan lo que esperar al finalizar el trabajo un diseño bien acotado nos asegura esto.
                         Para que las partes sepan lo que esperar al finalizar el trabajo un diseño bien acotado nos asegura esto.</p>
-                        <iframe id="iframe-design" style="position: relative; top: 0; left: 0; width: 100%; height: 80%; max-width: 700px; max-height: auto;"
-                                src="https://www.youtube.com/embed/h4E1J6TNoLY">
+
+                        <iframe id="iframe-design" class="iframe-modal"
+                                src="https://www.youtube.com/embed/-ut593BSlCk">
                         </iframe> 
                     </div>
                 </div>
@@ -272,15 +288,19 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                     </div>
-                    <div class="modal-body margin-single-video">
-                        <p class="font-text font-italic4" style="text-align: center;">¿Qué es el dominio web?<p>
+                    <div class="modal-body margin-single-video-55">
                         <p class="font-text" style="text-align: center;">
-                            El nombre que asignás a tu página en internet para que los usuarios puedan encontrarte fácilmente y, así, acceder a tu contenido.<br>
-                            ¿Y el certificado SSL?<br>Mira el video y enterate.
+                            <br>
+                            Si tenés tu página web pero no un dominio. Nosotros nos encargamos de linkear tu 
+                            página con el dominio que elijas, siempre que esté disponible.
                             </p>
-                        <iframe id="iframe-domain" style="position: relative; top: 0; left: 0; width: 100%; height: 80%; max-width: 700px; max-height: auto;"
-                                src="https://www.youtube.com/embed/h4E1J6TNoLY">
-                        </iframe> 
+                        <iframe id="iframe-domain" class="iframe-modal"
+                                src="https://www.youtube.com/embed/CKycCq-ZtT0">
+                                <br>
+                                <br>
+                                <br>
+
+                        </iframe>
                     </div>
                 </div>
             </div>

@@ -3173,7 +3173,7 @@ input[type=button].btn-block {
 
     .box{
       background-color: #faeec3;
-      border: 5px solid rgba(255,255,255,1);
+      border: 2px solid rgba(255,255,255,1);
       width: 100%;
       height: auto;  /*si lo dejo en auto me mantiene los margenes del 3%*/
       margin: 0%; /* width + 2* margin debe ser igual a 50% */
@@ -3415,6 +3415,7 @@ input[type=button].btn-block {
       .col-lg-3 {
         flex: 0 0 50%;
         max-width: 50%;
+        margin-bottom: 5%;
       }
 
       .fa-ul{
@@ -3443,7 +3444,17 @@ input[type=button].btn-block {
 
       .margin-contact3{
         margin-top: 10%; 
-        margin-bottom: -80%;
+        margin-bottom: -60%;
+      }
+
+      .style-domain{
+        position: relative; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        height: 80%; 
+        max-width: 700px; 
+        max-height: auto;
       }
 }
 
@@ -3507,15 +3518,14 @@ input[type=button].btn-block {
 }
 
 .box{
-  margin-top: 0%;
   background-color: #faeec3;
   border: 5px solid rgba(255,255,255,1);
   width: 50%;
-  height: auto;  /*si lo dejo en auto me mantiene los margenes del 3%*/
-  margin: 0%; /* width + 2* margin debe ser igual a 50% */
-  margin-top: 8%;
+  height: auto;  
+  margin: 0%; 
+  margin-top: 16%;
   border-radius: 15px;
-  padding: 25px; /* margenes de los costados entre texto y caja */
+  padding: 25px; 
 }
 
   .font-text{
@@ -3531,11 +3541,11 @@ input[type=button].btn-block {
   }
 
   .iframe {
-    position: absolute;
-    height:40%;
-    width: 85%;
-    top: 30%;
-    left: 19%;
+    max-height: 200vh;
+    height: 200px;
+    width: 600px;
+    margin-left:auto;
+    margin-right:auto;
     z-index:2;
   }
 
@@ -3578,6 +3588,21 @@ input[type=button].btn-block {
     margin-top: 5%; 
     margin-bottom: -10%;
   }
+
+  .col-lg-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  .style-domain{
+    position: relative; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    max-width: 1000px; 
+    max-height: auto;
+  }
 }
 
 @media (min-width: 992px) {
@@ -3594,17 +3619,18 @@ input[type=button].btn-block {
   .object{
     max-width: 60%;
   }
-
+/*
   .box{
     background-color: #faeec3;
     border: 5px solid rgba(255,255,255,1);
     width: 50%;
-    height: auto;  /*si lo dejo en auto me mantiene los margenes del 3%*/
-    margin: 0%; /* width + 2* margin debe ser igual a 50% */
+    height: auto;  
+    margin: 0%; 
     margin-top: 8%;
     border-radius: 15px;
-    padding: 25px; /* margenes de los costados entre texto y caja */
+    padding: 25px; 
   }
+  */
 }
 @media (min-width: 1200px) {
   .dropdown-menu-xl-left {
@@ -11226,7 +11252,7 @@ section#contact form#contactForm :-ms-input-placeholder {
     width: 50%;
     height: auto;  /*si lo dejo en auto me mantiene los margenes del 3%*/
     margin: 0%; /* width + 2* margin debe ser igual a 50% */
-    margin-top: 8%;
+    margin-top: 12%;
     border-radius: 15px;
     padding: 25px; /* margenes de los costados entre texto y caja */
   }
@@ -11249,9 +11275,17 @@ section#contact form#contactForm :-ms-input-placeholder {
       width: 85%;
       top: 30%;
       left: 19%;
-      z-index:2;
+      z-index:2;    
     }
 
+    .iframe-modal {
+      position: absolute;
+      width: 90%;
+      height: 70%;
+      top: 100%;
+      left: 5%;
+      z-index:2;    
+    }
 
   *{
     margin: 0;
@@ -11415,8 +11449,20 @@ section#contact form#contactForm :-ms-input-placeholder {
     margin-bottom: 15%;
   }
     
-  .margin-single-video{
-    margin-bottom: 40%;
+  .margin-single-video-55{
+    margin-bottom: 55%;
+  }
+
+  .margin-single-video-31{
+    margin-bottom: 31%;
+  }
+
+  .margin-single-video-25{
+    margin-bottom: 25%;
+  }
+
+  .margin-single-video-44{
+    margin-bottom: 44%;
   }
 
   .margin-double-video{
@@ -11432,6 +11478,16 @@ section#contact form#contactForm :-ms-input-placeholder {
   .margin-contact3{
     margin-top: 15%; 
     margin-bottom: -20%;
+  }
+
+  .style-domain{
+    position: relative; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    max-width: 1000px; 
+    max-height: auto;
   }
 }
 
@@ -11528,7 +11584,7 @@ p.text-service{
 .float1{
 	position:fixed;
 	width:60px;
-	height:60px;
+	height:60px; 
 	bottom:110px;
 	right:40px;
 	background-color:#25d366;
