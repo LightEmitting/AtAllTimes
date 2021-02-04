@@ -3225,6 +3225,8 @@ input[type=button].btn-block {
         margin-left: 5%;
       }
 
+
+
       *{
         margin: 0;
         padding: 0;
@@ -3455,6 +3457,41 @@ input[type=button].btn-block {
         height: 80%; 
         max-width: 700px; 
         max-height: auto;
+      }
+
+      .margin-web{
+        margin-bottom: 80%;
+      }
+
+      .margin-domain{
+        margin-bottom: 50%;
+      }
+
+      .margin-responsive{
+        margin-bottom: 50%;
+      }
+
+
+      .margin-hosting{
+        margin-bottom: 43%;
+      }
+
+      .margin-seo{
+        margin-bottom: 50%;
+      }
+
+      .margin-courses{
+        margin-bottom: 46%;
+      }
+      
+      .margin-design{
+        margin-bottom: 50%;
+      }
+
+      .loc-web{
+        text-align: center;   
+        position: relative; 
+        top: 150px;  
       }
 }
 
@@ -11077,6 +11114,41 @@ a{
   margin-bottom: 5%;
 }
 
+.margin-web{
+  margin-bottom: 60%;
+}
+
+.margin-domain{
+  margin-bottom: 45%;
+}
+
+.margin-responsive{
+  margin-bottom: 45%;
+}
+
+
+.margin-hosting{
+  margin-bottom: 38%;
+}
+
+.margin-seo{
+  margin-bottom: 38%;
+}
+
+.margin-courses{
+  margin-bottom: 38%;
+}
+
+.margin-design{
+  margin-bottom: 45%;
+}
+
+.loc-web{
+  text-align: center;   
+  position: relative; 
+  top: 160px;  
+}
+
 }
 @media (min-width: 992px) {
   .timeline > li {
@@ -11098,6 +11170,7 @@ a{
   .timeline > li.timeline-inverted > .timeline-panel {
     padding: 0 20px 20px;
   }
+
 }
 @media (min-width: 1200px) {
   .timeline > li {
@@ -11278,15 +11351,6 @@ section#contact form#contactForm :-ms-input-placeholder {
       z-index:2;    
     }
 
-    .iframe-modal {
-      position: absolute;
-      width: 90%;
-      height: 70%;
-      top: 100%;
-      left: 5%;
-      z-index:2;    
-    }
-
   *{
     margin: 0;
     padding: 0;
@@ -11449,21 +11513,6 @@ section#contact form#contactForm :-ms-input-placeholder {
     margin-bottom: 15%;
   }
     
-  .margin-single-video-55{
-    margin-bottom: 55%;
-  }
-
-  .margin-single-video-31{
-    margin-bottom: 31%;
-  }
-
-  .margin-single-video-25{
-    margin-bottom: 25%;
-  }
-
-  .margin-single-video-44{
-    margin-bottom: 44%;
-  }
 
   .margin-double-video{
     margin-bottom: 0%;
@@ -11488,6 +11537,40 @@ section#contact form#contactForm :-ms-input-placeholder {
     height: 100%; 
     max-width: 1000px; 
     max-height: auto;
+  }
+
+  .margin-web{
+    margin-bottom: 65%;
+  }
+
+  .margin-domain{
+    margin-bottom: 60%;
+  }
+
+  .margin-responsive{
+    margin-bottom: 60%;
+  }
+
+  .margin-hosting{
+    margin-bottom: 52%;
+  }
+
+  .margin-seo{
+    margin-bottom: 52%;
+  }
+
+  .margin-courses{
+    margin-bottom: 50%;
+  }
+
+  .margin-design{
+    margin-bottom: 52%;
+  }
+
+  .loc-web{
+    text-align: center;   
+    position: relative; 
+    top: 170px;  
   }
 }
 
@@ -11619,4 +11702,31 @@ p.text-service{
 .my-float2{
   margin-top:16px;
   color: white;
+}
+
+.iframe-modal {
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  top: 100%;
+  left: 5%;
+  z-index:2;  
+}
+
+.iframe-modal1 {
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  top: 50%;
+  left: 5%;
+  z-index:2;  
+}
+
+.iframe-modal2 {
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  top: 210%;
+  left: 5%;
+  z-index:2;  
 }
