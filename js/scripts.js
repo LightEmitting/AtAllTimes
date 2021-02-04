@@ -106,7 +106,7 @@
             $("#iframe-web1").attr('src', urlweb1);
         });
         $("#Modal-web").on('show.bs.modal', function(){
-            $("#iframe-web2").attr('src', urlweb1);
+            $("#iframe-web2").attr('src', urlweb2);
         });
         $("#Modal-responsive").on('show.bs.modal', function(){
             $("#iframe-responsive").attr('src', urlresponsive);
