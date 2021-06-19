@@ -64,7 +64,7 @@
         var urlhosting = $("#iframe-hosting").attr('src');
         var urlseo = $("#iframe-seo").attr('src');
         var urlcourses1 = $("#iframe-courses1").attr('src');
-       // var urlcourses2 = $("#iframe-courses2").attr('src');
+        var urlcourses2 = $("#iframe-courses2").attr('src');
         var urldomain = $("#iframe-domain").attr('src');
         var urldesign = $("#iframe-design").attr('src');
         
@@ -88,11 +88,11 @@
         $("#Modal-courses").on('hide.bs.modal', function(){
             $("#iframe-courses1").attr('src', '');
         });
-        /*
+        
         $("#Modal-courses").on('hide.bs.modal', function(){
             $("#iframe-courses2").attr('src', '');
         });
-        */
+        
         $("#Modal-design").on('hide.bs.modal', function(){
             $("#iframe-design").attr('src', '');
         });
@@ -119,6 +119,9 @@
         });
         $("#Modal-courses").on('show.bs.modal', function(){
             $("#iframe-courses1").attr('src', urlcourses1);
+        });
+        $("#Modal-courses").on('show.bs.modal', function(){
+            $("#iframe-courses2").attr('src', urlcourses2);
         });
         $("#Modal-design").on('show.bs.modal', function(){
             $("#iframe-design").attr('src', urldesign);

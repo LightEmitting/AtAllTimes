@@ -3494,6 +3494,12 @@ input[type=button].btn-block {
         top: 150px;  
       }
 
+      .loc-course{
+        text-align: center;   
+        position: relative; 
+        top: 220px;  
+      }
+
       .flag{
         height: 25px;
         margin-right: auto; 
@@ -11125,39 +11131,32 @@ a{
   margin-bottom: 5%;
 }
 
-.margin-web{
-  margin-bottom: 60%;
-}
-
-.margin-domain{
+.margin-std{
   margin-bottom: 45%;
 }
 
-.margin-responsive{
-  margin-bottom: 45%;
+.margin-std2{
+  margin-bottom: 80%;
 }
 
-
-.margin-hosting{
-  margin-bottom: 38%;
-}
-
-.margin-seo{
-  margin-bottom: 38%;
+.margin-std3{
+  margin-bottom: 90%;
 }
 
 .margin-courses{
   margin-bottom: 38%;
 }
 
-.margin-design{
-  margin-bottom: 45%;
-}
-
 .loc-web{
   text-align: center;   
   position: relative; 
-  top: 160px;  
+  top: 220px;  
+}
+
+.loc-course{
+  text-align: center;   
+  position: relative; 
+  top: 240px;  
 }
 
 }
@@ -11583,6 +11582,13 @@ section#contact form#contactForm :-ms-input-placeholder {
     position: relative; 
     top: 170px;  
   }
+  
+  .loc-course{
+    text-align: center;   
+    position: relative; 
+    top: 260px;  
+  }
+
 }
 
 .icon-service{
@@ -11727,13 +11733,31 @@ p.text-service{
 .iframe-modal1 {
   position: absolute;
   width: 90%;
-  height: 100%;
+  height: 140%;
   top: 50%;
   left: 5%;
   z-index:2;  
 }
 
 .iframe-modal2 {
+  position: absolute;
+  width: 90%;
+  height: 140%;
+  top: 250%;
+  left: 5%;
+  z-index:2;  
+}
+
+.iframe-course1 {
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  top: 50%;
+  left: 5%;
+  z-index:2;  
+}
+
+.iframe-course2 {
   position: absolute;
   width: 90%;
   height: 100%;
