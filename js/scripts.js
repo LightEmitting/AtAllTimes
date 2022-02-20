@@ -209,7 +209,8 @@ $(document).ready(function() {
                   dataimg_Cen = dataimg_Cen - 1;
            }; 
       });
-      //izquierdo
+      //izquierdovar shoppingCart = (function() {
+
      $("#arrowrigth").on( "click", function( event ) {
          $(".container_carru #items img").attr('class', '');
         if (dataimg_Cen == items) {
@@ -251,6 +252,5 @@ $(document).ready(function() {
          $("#arrowleft" ).trigger( "click" );
     });
     }
-    });
     
-        
+    });
